@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-
 # Create your views here.
 
 
@@ -14,7 +13,7 @@ def home(request):
 
 def item(request, id):
     return render(request,
-                  'clone/pages/home.html',
+                  'clone/pages/item.html',
                   context={
                       'serialNumber': '128B12',
                   })
