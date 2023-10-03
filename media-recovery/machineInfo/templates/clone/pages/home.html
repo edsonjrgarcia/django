@@ -1,9 +1,7 @@
-{% include 'clone/components/head.html' %}
+{% extends 'global/base.html' %}
 
-<body>
-    {% include 'clone/components/header.html' %}
-    {% include 'clone/components/search.html' %}
-
+{% block title %}Clone |{% endblock title %}
+{% block content %}
     <main class="main-content-container">
         <div class="main-content main-content-list container">
             {% include 'clone/components/items.html' %}
@@ -12,7 +10,6 @@
             {% include 'clone/components/items.html' %}
         </div>
     </main>
-    {% include 'clone/components/footer.html' %}
-</body>
+{% endblock content %}
 
 </html>
